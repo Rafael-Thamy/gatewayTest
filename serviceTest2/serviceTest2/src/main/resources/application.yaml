@@ -1,0 +1,7 @@
+
+spring:
+  application:
+    name: MicroService2
+
+server:
+  port: 8082

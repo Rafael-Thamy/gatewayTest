@@ -1,0 +1,15 @@
+
+server:
+  port: 8083
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: Microservice1
+          uri: http://localhost:8081/
+          Predicates:
+            - Path=/endpoint/**
+        - id: Microservice2
+          uri: http://localhost:8082/
+          Predicates:
+            - Path=/endpointTwo/**
